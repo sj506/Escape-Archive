@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ko">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#091018"><meta name="description" content="실종자의 노트북에 남은 메일, 사진, 기록을 조사하는 1인용 미스터리 게임."><title>새벽 2시 17분 — 실종사건</title><link rel="stylesheet" href="./style.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#091018"><meta name="description" content="실종자의 노트북에 남은 메일, 사진, 기록을 조사하는 1인용 미스터리 게임."><title>새벽 2시 17분 — 실종사건</title><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./music.css"></head>
 <body>
 <a class="skip" href="#screen">조사 화면으로 건너뛰기</a>
 <section id="briefing" class="briefing" aria-labelledby="case-title">
@@ -24,4 +24,4 @@
 </main>
 <section id="ending" class="ending hidden"><article class="ending-card"><p class="eyebrow">CASE 0217 / RESOLVED</p><h1>서윤을 찾았다.</h1><p>경찰은 폐쇄된 <strong>서림역 3번 출구</strong>의 물품보관함 D–14에서 서윤의 카메라와 구조 요청을 발견했다. 서윤은 역 지하 촬영장에서 발을 다친 채 구조를 기다리고 있었다.</p><dl class="result"><div><dt>조사 시간</dt><dd id="resultTime"></dd></div><div><dt>수집한 기록</dt><dd id="resultClues"></dd></div><div><dt>힌트 확인</dt><dd id="resultHints"></dd></div></dl><blockquote>“내가 남긴 걸… 누군가는 읽어줄 줄 알았어요.”</blockquote><p class="epilogue">카메라의 마지막 사진에는 누군가가 서윤을 역 안으로 따라가는 모습이 찍혀 있었다.<br>구조는 끝났지만, 수사는 계속된다.</p><div class="start-actions"><button id="reviewBtn" class="ghost">단서 다시 보기</button><button id="restartBtn" class="primary">새 조사 시작</button></div></article></section>
 <dialog id="dialog" aria-labelledby="dialogTitle"><header><h2 id="dialogTitle"></h2><button data-close-dialog aria-label="창 닫기">×</button></header><div id="dialogBody"></div></dialog><div id="toast" class="toast" role="status" aria-live="polite"></div><input id="importFile" type="file" accept=".json,application/json" class="hidden"><script src="./engine.js"></script><script src="./runtime.js"></script><script src="./script.js"></script>
-</body></html>
+<script src="./music.js" data-theme="missing"></script></body></html>
