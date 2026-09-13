@@ -5,6 +5,21 @@ window.ESCAPE_ARCHIVE = {
   description: '익숙한 화면에 숨은 단서를 따라가는 웹탈출 게임을 만듭니다.',
   projects: [
     {
+      id: 'wind-post-office', number: '03', title: '바람이 쉬어 가는 우체국',
+      subtitle: '주소 대신 기억이 적힌 네 통의 편지', category: 'healing', genre: '힐링 추리',
+      status: 'preview', version: '1.1', updated: '2026-09-12', duration: '60–90분 (목표)', players: '1인',
+      cover: './games/wind-post-office/assets/post-office.webp', coverMode: 'full',
+      coverAlt: '바다가 보이는 작은 우체국과 붉은 우편함 옆에서 쉬는 고양이',
+      premise: '여행길에 들어선 바닷가 우체국. 이름 대신 기억이 적힌 편지 네 통을, 마을의 기록을 이어 제 주인에게 전해 주세요.',
+      intro: ['일정을 비워 둔 여행의 오후, 붉은 우편함 앞에서 걸음을 멈춘 당신에게 우체국장이 작은 부탁을 건넵니다. 봄 우편 주간에 도착한 편지들의 수신인과 배달할 곳을 찾아 달라는 부탁입니다.', '영수증과 주민들의 글, 방향이 다른 옛 지도, 버스와 물때, 오래된 약속을 연결해 보세요. 편지가 도착할 때마다 누군가의 하루에 작은 변화가 생깁니다.'],
+      hook: '그 마음이 도착할 곳을 찾아 주세요.',
+      tags: ['난이도 상', '기록 교차 추리', '편지 배달'],
+      features: [{title:'이야기 속 집배원이 되다',text:'시작 팝업에서 마을에 도착한 사연과 우체국장의 부탁을 읽고, 첫 편지를 맡습니다.'},{title:'기억과 기록을 연결하다',text:'마을 기록 18건을 대조하고, 지도와 시간표를 해석하며 다섯 퍼즐을 해결합니다. 조사 수첩에 단서와 생각을 보관할 수 있습니다.'},{title:'작은 안부를 전하다',text:'배달 뒤에 도착한 답장과 감사 엽서를 모아 마지막 초대장을 읽어 냅니다. 주민들의 달라진 소식도 확인해 보세요.'}],
+      notes: ['난이도 상이며, 시간제한 없이 천천히 조사할 수 있습니다.','플레이 시간 60–90분은 설계 목표입니다.','필요한 단서는 모두 게임 안에 있으며, 퍼즐마다 세 단계의 힌트가 있습니다.','배경음악을 끄거나 음량을 조절할 수 있습니다.'],
+      playPath: './games/wind-post-office/index.html',
+      download: './downloads/wind-post-office-preview.zip', downloadSize: '3.9 MB'
+    },
+    {
       id: 'graduation-not-complete', number: '02', title: '졸업하지 못한 아이',
       subtitle: '해원고등학교 기록 복원 안내', category: 'horror', genre: '심리 공포',
       status: 'preview', version: '2.0', updated: '2026-09-11', duration: '30–45분', players: '1인',
