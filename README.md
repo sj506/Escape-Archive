@@ -57,3 +57,7 @@ Seungjae의 웹탈출 게임 포트폴리오. HTML, CSS, JavaScript로 구성된
 ## GitHub Pages
 
 브랜치 기반 배포를 사용한다면 Settings → Pages에서 main 브랜치와 /(root)를 선택합니다. 이 저장소에는 docs 폴더가 없습니다. .nojekyll은 HTML/CSS/JavaScript 파일을 그대로 제공하도록 합니다.
+
+## 나란히 보는 조사 수첩
+
+세 게임 모두 PC에서는 왼쪽 수첩과 본문을 함께 볼 수 있습니다. 모바일에서는 수첩 제목을 눌러 펼치거나 접습니다. 메모는 기존 진행 기록에 자동 저장됩니다. 우체국 배달표는 PC에서 수첩을 사용하면서 작성할 수 있습니다.

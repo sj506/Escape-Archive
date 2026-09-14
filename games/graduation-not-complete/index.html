@@ -75,6 +75,10 @@
           </ol>
         </section>
         <section class="counter-box"><span>TODAY <b>000001</b></span><span>TOTAL <b>021017</b></span></section>
+        <details class="case-notebook" open>
+          <summary><span>사건 수첩</span><small>자동 저장</small></summary>
+          <div class="case-notebook-body"><p class="notebook-help">복원한 단서를 보면서 사건의 흐름을 함께 정리하세요.</p><div id="journalList" class="journal-list"></div><label class="personal-note">나의 조사 메모<textarea id="investigatorNotes" rows="8" maxlength="4000" placeholder="기억과 기록 사이에서 발견한 것을 적어두세요."></textarea></label></div>
+        </details>
       </aside>
 
       <div class="content" id="mainContent" tabindex="-1">
@@ -168,7 +172,6 @@
         </section>
 
         <section id="partialEnding" class="page partial-ending"><div class="partial-content"><p>기록 복원 결과 / 02</p><h2>불완전한 사과</h2><p>가영의 이름은 앨범에 돌아왔습니다.<br>그러나 마지막 쪽지의 수신자는 여전히 가려져 있습니다.</p><div class="pending-status"><b id="partialName"></b><span>졸업 보류</span></div><blockquote>“내가 여기 있었다는 건 기억했구나.<br>네가 거기 있었다는 것도 기억해 줘.”</blockquote><p>카운트다운은 멈췄지만, 홈페이지는 사라지지 않았습니다.</p><button id="partialReview" class="old-button">기록 다시 보기</button><button id="partialReplay" class="old-button">처음부터</button></div></section>
-        <section id="journal" class="page"><div class="page-heading"><div><small>RESTORED EVIDENCE</small><h2>단서 수첩</h2></div></div><div id="journalList" class="journal-list"></div><label class="personal-note">나의 조사 메모<textarea id="investigatorNotes" rows="5" maxlength="4000" placeholder="기억과 기록 사이에서 발견한 것을 적어두세요."></textarea></label></section>
         <section id="badEnding" class="page bad-ending"><div><p>DELETE COMPLETE</p><h2>기록이 삭제되었습니다.</h2><span id="badName">이름 없음</span><b>상태: 결석 처리</b><time>기록 예정일 2026.10.17</time><button id="badReplayBtn" class="old-button">되돌아가기</button></div></section>
       </div>
     </main>
