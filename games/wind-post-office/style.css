@@ -49,4 +49,4 @@
 @media(min-width:701px) and (max-width:1100px){.answer-dialog{width:calc(100vw - 420px);padding:20px}}
 
 /* Keep the left menu and notebook flush with the viewport. */
-@media(min-width:701px){.shell{grid-template-areas:"menu notebook main";align-items:start}.shell>.rail{grid-area:menu;position:sticky;top:0;min-height:calc(100svh - 84px)}.shell>.case-notebook{grid-area:notebook;top:0;max-height:100svh;border-top:0;border-left:0}.shell>.content{grid-area:main}.rail-progress{margin-top:24px}}
+@media(min-width:701px){.shell{grid-template-areas:"menu notebook main";align-items:start}.shell>.rail{grid-area:menu;position:relative;align-self:stretch;min-height:calc(100svh - 84px)}.shell>.case-notebook{grid-area:notebook;top:0;max-height:100svh;border-top:0;border-left:0}.shell>.content{grid-area:main}.rail-progress{margin-top:24px}}

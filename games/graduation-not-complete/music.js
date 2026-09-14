@@ -12,14 +12,13 @@
   const key = 'escape-music-' + theme;
   let volume = 25, muted = false;
   try { const saved=JSON.parse(localStorage.getItem(key)); if(saved){if(Number.isFinite(saved.volume))volume=Math.max(0,Math.min(100,saved.volume));muted=saved.muted===true;} } catch {}
-  const bar=document.createElement('aside');
-  bar.className='escape-music'; bar.setAttribute('aria-label','배경음악');
-  bar.innerHTML='<button type="button" aria-pressed="false">음악 켜기</button><div><span class="escape-music-title"></span><label>음량 <input type="range" min="0" max="100" step="1" aria-label="배경음악 음량"></label></div><span class="escape-music-status" role="status"></span>';
-  document.body.append(bar); document.body.classList.add('has-escape-music');
-  const button=bar.querySelector('button'), slider=bar.querySelector('input'), status=bar.querySelector('[role="status"]');
-  bar.querySelector('.escape-music-title').textContent=score.title;
-  slider.value=volume;
-  if(game)status.textContent=muted?'음악 꺼짐':'게임 시작 시 잔잔하게 재생';
+  const button=document.createElement('button');
+  button.type='button';button.className='school-music-toggle';
+  button.textContent='음악 켜기';button.setAttribute('aria-pressed','false');
+  const status=document.createElement('span');
+  status.className='school-music-status';status.setAttribute('role','status');
+  const host=document.createElement('div');host.className='school-music-control';
+  host.append(button,status);document.querySelector('.header-main').append(host);
   let ctx=null, master=null, timer=null, playing=false, generation=0, chord=0;
   const voices=new Set();
   const remember=()=>{try{localStorage.setItem(key,JSON.stringify({volume,muted}));}catch{}};
@@ -69,7 +68,6 @@
     }catch{if(attempt===generation)stop('음악 켜기를 눌러 재생해 주세요.');}
   }
   button.addEventListener('click',()=>{if(playing){muted=true;stop();}else{muted=false;start();}remember();});
-  slider.addEventListener('input',()=>{volume=Number(slider.value);if(master)master.gain.setTargetAtTime(volume/100*.65,ctx.currentTime,.1);remember();});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop('음악 켜기를 눌러 다시 재생');});
   window.addEventListener('pagehide',()=>stop());
   if(!game)document.addEventListener('click',e=>{const link=e.target.closest('a[href]');if(link&&/play\.html|\/games\//.test(link.getAttribute('href')))stop();});
